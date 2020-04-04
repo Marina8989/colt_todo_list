@@ -1,19 +1,47 @@
    // printReverse()
-   function printReverse(arr) {
-       var arrr = [];
+   //    function printReverse(arr) {
+   //        var arrr = [];
 
 
-       for (i = 0; i < arr.length; i++) {
-           arr.reverse();
-           arrr.push(arr);
-           return arrr.toString();
+   //        for (i = 0; i < arr.length; i++) {
+   //            arr.reverse();
+   //            arrr.push(arr);
+   //            return arrr.toString();
+   //        }
+
+   //    }
+
+
+   //    console.log(printReverse([1, 2, 3, 4]));
+   //    console.log(printReverse(['a', 'b', 'c', 'd']));
+
+
+
+   //isUniform()
+
+   function isUniform(arr) {
+
+       var first = arr[0];
+       for (i = 1; i < arr.length; i++) {
+           if (first === arr[i]) {
+               return true;
+           }
+           return false;
        }
+
 
    }
 
+   console.log(isUniform([1, 1, 1, 1, 1]));
+   console.log(isUniform([2, 1, 1, 1, 1]));
+   console.log(isUniform(['a', 'b', 'p']));
+   console.log(isUniform(['p', 'p', 'p']));
 
-   console.log(printReverse([1, 2, 3, 4]));
-   console.log(printReverse(['a', 'b', 'c', 'd']));
+
+
+
+
+
 
 
 
