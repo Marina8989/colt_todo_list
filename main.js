@@ -19,27 +19,63 @@
 
    //isUniform()
 
-   function isUniform(arr) {
+   //    function isUniform(arr) {
 
-       var first = arr[0];
-       for (i = 1; i < arr.length; i++) {
-           if (first === arr[i]) {
-               return true;
+   //        var first = arr[0];
+   //        for (i = 1; i < arr.length; i++) {
+   //            if (first === arr[i]) {
+   //                return true;
+   //            }
+   //            return false;
+   //        }
+
+
+   //    }
+
+   //    console.log(isUniform([1, 1, 1, 1, 1]));
+   //    console.log(isUniform([2, 1, 1, 1, 1]));
+   //    console.log(isUniform(['a', 'b', 'p']));
+   //   console.log(isUniform(['p', 'p', 'p']));
+
+
+
+
+
+   //    //sumArray()
+   //    function sumArray(arr) {
+   //        var sum = 0;
+   //        for (i = 0; i < arr.length; i++) {
+   //            sum += arr[i];
+   //        }
+   //        return sum;
+   //    }
+
+   //    console.log(sumArray([1, 2, 3]));
+   //    console.log(sumArray([10, 3, 10, 4]));
+   //    console.log(sumArray([-5, 100]));
+
+
+
+
+
+
+
+   //max()
+
+
+   function max(arr) {
+       var maxNum = 0;
+       for (i = 0; i < arr.length; i++) {
+           if (arr[i] > maxNum) {
+               maxNum = arr[i];
            }
-           return false;
        }
-
-
+       return maxNum;
    }
 
-   console.log(isUniform([1, 1, 1, 1, 1]));
-   console.log(isUniform([2, 1, 1, 1, 1]));
-   console.log(isUniform(['a', 'b', 'p']));
-   console.log(isUniform(['p', 'p', 'p']));
-
-
-
-
+   console.log(max([1, 2, 3]));
+   console.log(max([10, 3, 10, 4]));
+   console.log(max([-5, 100]));
 
 
 
